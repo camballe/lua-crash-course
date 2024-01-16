@@ -31,3 +31,5 @@ _G.Hello = "hello" -- more recommended way of defining global variables
 
 x = "hi"
 print(type(x))
+
+-- You may define variables without the 'local' keyword. You'll get a squiggly line under the name because Lua will think you intended on using uppercase, to indicate a global variable
