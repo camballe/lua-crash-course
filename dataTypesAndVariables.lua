@@ -23,6 +23,8 @@ print(description)
 
 local old = true
 
+-- Only false things in Lua are 'false' and 'nil'. Even 0 is true!
+
 C = 20       -- global variable
 local c = 10 -- local variable
 print(C, c)
