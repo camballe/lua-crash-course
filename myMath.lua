@@ -1,3 +1,5 @@
+-- CUSTOM MODULE
+
 _G.my_math = {}
 
 function my_math.add(x, y) -- we cannot use local here
