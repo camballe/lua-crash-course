@@ -17,12 +17,20 @@
 
 -- local anotherFile = io.open("anotherFile.txt", "a")
 local anotherFile = io.open("anotherFile.txt", "r")
-local reads = anotherFile:read("*line")
+-- local reads = anotherFile:read("*line")
 
--- anotherFile:write("\nMy name is Kambale")
+-- -- anotherFile:write("\nMy name is Kambale")
 
-anotherFile:close()
-print(reads)
+-- anotherFile:close()
+-- print(reads)
+
+if anotherFile then
+    local reads = anotherFile:read("*line")
+    anotherFile:close()
+    print(reads)
+else
+    print("Failed to open the file.")
+end
 
 --[[
    ERROR WHEN YOU HOVER OVER 'anotherFile':
